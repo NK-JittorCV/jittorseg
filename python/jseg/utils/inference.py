@@ -1,7 +1,7 @@
 import cv2
 import os
 import jittor as jt
-from jseg.runner import Runner
+from jseg.runner import TestRunner
 from jseg.config import init_cfg, update_cfg, get_cfg
 from jseg.datasets.pipelines import Compose
 
@@ -12,12 +12,12 @@ class InferenceSegmentor:
         if len(checkpoint_file) > 0:
             update_cfg(resume_path=checkpoint_file)
 
-        self.runner = Runner()
+        self.runner = TestRunner(save_dir=save_dir)
         self.runner.model.eval()
         self.transforms = Compose(get_cfg().test_pipeline[1:])
-        self.palette = self.runner.val_dataset.PALETTE
-        self.runner.model.CLASSES = self.runner.val_dataset.CLASSES
-        self.runner.model.PALETTE = self.runner.val_dataset.PALETTE
+        self.palette = self.runner.test_dataset.PALETTE
+        self.runner.model.CLASSES = self.runner.test_dataset.CLASSES
+        self.runner.model.PALETTE = self.runner.test_dataset.PALETTE
         self.save_dir = save_dir
 
     def load_img(self, results):

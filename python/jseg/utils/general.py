@@ -87,6 +87,7 @@ def to_jt_var(data):
     """
         convert data to jt_array
     """
+
     def _to_jt_var(data):
         if isinstance(data, (list, tuple)):
             data = [_to_jt_var(d) for d in data]
@@ -127,10 +128,10 @@ def multi_apply(func, *args, **kwargs):
 
 def unmap(data, count, inds, fill=0):
     if data.ndim == 1:
-        ret = jt.full((count, ), fill, dtype=data.dtype)
+        ret = jt.full((count,), fill, dtype=data.dtype)
         ret[inds] = data
     else:
-        new_size = (count, ) + data.size()[1:]
+        new_size = (count,) + data.size()[1:]
         ret = jt.full(new_size, fill, dtype=data.dtype)
         ret[inds, :] = data
     return ret
@@ -256,3 +257,22 @@ def np2tmp(array, temp_file_name=None):
                                                      delete=False).name
     np.save(temp_file_name, array)
     return temp_file_name
+
+
+def is_method_overridden(method, base_class, derived_class):
+    """Check if a method of base class is overridden in derived class.
+
+    Args:
+        method (str): the method name to check.
+        base_class (type): the class of the base class.
+        derived_class (type | Any): the class or instance of the derived class.
+    """
+    assert isinstance(base_class, type), \
+        "base_class doesn't accept instance, Please pass class instead."
+
+    if not isinstance(derived_class, type):
+        derived_class = derived_class.__class__
+
+    base_method = getattr(base_class, method)
+    derived_method = getattr(derived_class, method)
+    return derived_method != base_method

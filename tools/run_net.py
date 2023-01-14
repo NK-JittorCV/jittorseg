@@ -1,6 +1,6 @@
 import argparse
 import jittor as jt
-from jseg.runner import Runner
+from jseg.runner import TrainRunner, EvalRunner, TestRunner
 from jseg.config import init_cfg
 from jseg.config.config import update_cfg
 
@@ -56,14 +56,16 @@ def main():
     if args.efficient_val:
         update_cfg(efficient_val=args.efficient_val)
 
-    runner = Runner()
+    runner = None
 
     if args.task == "train":
-        runner.run()
+        runner = TrainRunner()
     elif args.task == "val":
-        runner.val()
+        runner = EvalRunner()
     elif args.task == "test":
-        runner.test(args.save_dir)
+        runner = TestRunner(save_dir=args.save_dir)
+
+    runner.run()
 
 
 if __name__ == "__main__":
