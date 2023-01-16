@@ -1,4 +1,4 @@
-import argparse
+from utils.config_process import parser
 import jittor as jt
 from jseg.runner import TrainRunner, EvalRunner, TestRunner
 from jseg.config import init_cfg
@@ -8,39 +8,7 @@ jt.cudnn.set_max_workspace_ratio(0.0)
 
 
 def main():
-    parser = argparse.ArgumentParser(
-        description="Jittor Semantic segmentation Training")
-    parser.add_argument(
-        "--config-file",
-        default="",
-        metavar="FILE",
-        help="path to config file",
-        type=str,
-    )
-    parser.add_argument(
-        "--task",
-        default="train",
-        help="train,val test",
-        type=str,
-    )
-
-    parser.add_argument(
-        "--resume",
-        default=None,
-        help="resume path",
-        type=str,
-    )
-    parser.add_argument(
-        "--save-dir",
-        default="./results",
-        type=str,
-    )
-
-    parser.add_argument("--no_cuda", action='store_true')
-
-    parser.add_argument("--efficient_val", action='store_true')
-    args = parser.parse_args()
-
+    args = parser()
     if not args.no_cuda:
         jt.flags.use_cuda = 1
 
