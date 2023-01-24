@@ -2,7 +2,7 @@ import math
 
 import jittor as jt
 from jittor import nn
-from ..utils.embed import PatchEmbed, FFN
+from jseg.models.basic_operators.embed import PatchEmbed, FFN
 from jseg.utils.weight_init import kaiming_init, constant_init, trunc_normal_
 from jseg.utils.helpers import to_2tuple
 from ..basic_operators import build_norm_layer

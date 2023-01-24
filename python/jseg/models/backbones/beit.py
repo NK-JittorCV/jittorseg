@@ -7,7 +7,7 @@ from jseg.utils.helpers import to_2tuple
 from jittor.nn import BatchNorm as _BatchNorm
 
 from jseg.utils.registry import BACKBONES
-from ..utils.embed import PatchEmbed
+from jseg.models.basic_operators.embed import PatchEmbed
 from .vit import TransformerEncoderLayer as VisionTransformerEncoderLayer
 
 try:

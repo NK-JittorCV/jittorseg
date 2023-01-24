@@ -7,7 +7,7 @@ from jseg.utils.helpers import to_2tuple
 from jseg.utils.registry import BACKBONES
 from ..basic_operators import build_norm_layer, build_dropout
 from jseg.utils.weight_init import trunc_normal_init, constant_init, trunc_normal_
-from ..utils.embed import PatchEmbed, PatchMerging, FFN
+from jseg.models.basic_operators.embed import PatchEmbed, PatchMerging, FFN
 
 
 class WindowMSA(nn.Module):

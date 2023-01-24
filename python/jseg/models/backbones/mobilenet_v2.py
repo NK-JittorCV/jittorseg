@@ -4,7 +4,7 @@ from ..basic_operators import ConvModule
 from jittor.nn import BatchNorm as _BatchNorm
 
 from jseg.utils.registry import BACKBONES
-from ..utils.inverted_residual import InvertedResidual
+from jseg.models.basic_operators.inverted_residual import InvertedResidual
 from jseg.utils.helpers import make_divisible
 
 
