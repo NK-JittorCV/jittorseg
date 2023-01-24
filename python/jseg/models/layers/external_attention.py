@@ -1,5 +1,5 @@
 from jittor import Module, nn
-from ..bricks import ConvModule
+from ..basic_operators import ConvModule
 
 
 class External_attention(Module):

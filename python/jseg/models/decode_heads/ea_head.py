@@ -1,6 +1,6 @@
 from .decode_head import BaseDecodeHead
 from jseg.utils.registry import HEADS
-from ..ops import External_attention
+from ..layers import External_attention
 
 
 @HEADS.register_module()

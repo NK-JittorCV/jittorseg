@@ -1,9 +1,9 @@
 import jittor as jt
 from jittor import nn
-from ..bricks import ConvModule
+from ..basic_operators import ConvModule
 
 from jseg.utils.registry import HEADS
-from ..ops import resize
+from ..layers import resize
 from ..losses import accuracy
 from .cascade_decode_head import BaseCascadeDecodeHead
 

@@ -1,7 +1,7 @@
 import numpy as np
 import jittor as jt
 from jittor import nn
-from ..bricks import build_norm_layer, build_dropout
+from ..basic_operators import build_norm_layer, build_dropout
 from jseg.utils.weight_init import (constant_init, kaiming_init, trunc_normal_)
 from jseg.utils.helpers import to_2tuple
 from jittor.nn import BatchNorm as _BatchNorm

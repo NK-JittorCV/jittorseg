@@ -58,7 +58,7 @@ NECKS = Registry()
 SCHEDULERS = Registry()
 HOOKS = Registry()
 PIXEL_SAMPLERS = Registry()
-# bricks
+# basic_operators
 CONV_LAYERS = Registry()
 ACTIVATION_LAYERS = Registry()
 NORM_LAYERS = Registry()

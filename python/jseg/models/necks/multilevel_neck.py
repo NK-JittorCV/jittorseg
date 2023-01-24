@@ -1,6 +1,6 @@
 from jittor import nn
 from jseg.utils.weight_init import xavier_init
-from ..ops import resize
+from ..layers import resize
 from jseg.utils.registry import NECKS
 import collections
 

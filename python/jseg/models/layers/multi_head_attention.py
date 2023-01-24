@@ -1,7 +1,7 @@
 import warnings
 import jittor as jt
 from jittor import nn
-from ..bricks import build_dropout
+from ..basic_operators import build_dropout
 
 
 class MultiHeadAttention(nn.Module):

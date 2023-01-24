@@ -1,5 +1,5 @@
 import jittor as jt
-from ..ops import ContextBlock
+from ..layers import ContextBlock
 
 from jseg.utils.registry import HEADS
 from .fcn_head import FCNHead

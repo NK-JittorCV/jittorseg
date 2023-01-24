@@ -1,7 +1,7 @@
 import jittor as jt
 from jittor import nn
-from ..ops import resize
-from ..bricks import ConvModule, DepthwiseSeparableConvModule
+from ..layers import resize
+from ..basic_operators import ConvModule, DepthwiseSeparableConvModule
 from jseg.utils.registry import HEADS
 from .aspp_head import ASPPHead
 

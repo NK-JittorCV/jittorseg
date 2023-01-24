@@ -5,10 +5,10 @@ from jittor import nn
 from ..utils.embed import PatchEmbed, FFN
 from jseg.utils.weight_init import kaiming_init, constant_init, trunc_normal_
 from jseg.utils.helpers import to_2tuple
-from ..bricks import build_norm_layer
+from ..basic_operators import build_norm_layer
 from jittor.nn import BatchNorm as _BatchNorm
 
-from ..ops import resize, MultiHeadAttention
+from ..layers import resize, MultiHeadAttention
 from jseg.utils.registry import BACKBONES
 
 

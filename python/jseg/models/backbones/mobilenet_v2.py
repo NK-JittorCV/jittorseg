@@ -1,6 +1,6 @@
 import jittor as jt
 from jittor import nn
-from ..bricks import ConvModule
+from ..basic_operators import ConvModule
 from jittor.nn import BatchNorm as _BatchNorm
 
 from jseg.utils.registry import BACKBONES

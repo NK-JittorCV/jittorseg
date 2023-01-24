@@ -1,7 +1,7 @@
 import math
 import jittor as jt
 from jittor import nn
-from ..bricks import build_conv_layer, build_norm_layer
+from ..basic_operators import build_conv_layer, build_norm_layer
 
 from jseg.utils.registry import BACKBONES
 from .resnet import ResLayer

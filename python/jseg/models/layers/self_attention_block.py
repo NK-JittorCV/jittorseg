@@ -1,6 +1,6 @@
 import jittor as jt
 from jittor import nn
-from ..bricks import ConvModule
+from ..basic_operators import ConvModule
 from jseg.utils.weight_init import constant_init
 
 

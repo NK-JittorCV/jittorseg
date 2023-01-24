@@ -3,7 +3,7 @@ from .fcn_head import FCNHead
 from jseg.utils.registry import HEADS
 
 try:
-    from ..ops import CrissCrossAttention
+    from ..layers import CrissCrossAttention
 except ModuleNotFoundError:
     CrissCrossAttention = None
 
@@ -13,7 +13,7 @@ class CCHead(FCNHead):
     def __init__(self, recurrence=2, **kwargs):
         if CrissCrossAttention is None:
             raise RuntimeError('Please install mmcv-full for '
-                               'CrissCrossAttention ops')
+                               'CrissCrossAttention layers')
         super(CCHead, self).__init__(num_convs=2, **kwargs)
         self.recurrence = recurrence
         self.cca = CrissCrossAttention(self.channels)

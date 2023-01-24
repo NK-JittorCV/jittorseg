@@ -2,7 +2,7 @@ import math
 
 import jittor as jt
 from jittor import nn
-from ..bricks import ConvModule
+from ..basic_operators import ConvModule
 
 from jseg.utils.registry import HEADS
 from .decode_head import BaseDecodeHead

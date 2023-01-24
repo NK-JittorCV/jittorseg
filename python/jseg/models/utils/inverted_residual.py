@@ -1,4 +1,4 @@
-from ..bricks import ConvModule
+from ..basic_operators import ConvModule
 from jittor import nn
 
 from .se_layer import SELayer

@@ -2,7 +2,7 @@ import jittor as jt
 from jittor import nn
 
 from jseg.utils.general import add_prefix
-from ..ops import resize
+from ..layers import resize
 from jseg.utils.registry import MODELS, build_from_cfg, BACKBONES, NECKS, HEADS
 from .base import BaseSegmentor
 

@@ -1,10 +1,10 @@
 import jittor as jt
 from jittor import nn
-from ..bricks import ConvModule
+from ..basic_operators import ConvModule
 
 from jseg.utils.general import add_prefix
 from jseg.utils.registry import HEADS
-from ..ops import Scale, SelfAttentionBlock
+from ..layers import Scale, SelfAttentionBlock
 from .decode_head import BaseDecodeHead
 
 
