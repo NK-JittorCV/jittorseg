@@ -1,5 +1,5 @@
 from jittor import nn
-from jseg.bricks import build_norm_layer
+from ..bricks import build_norm_layer
 
 from jseg.utils.registry import NECKS
 

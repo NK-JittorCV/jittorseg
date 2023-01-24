@@ -1,9 +1,9 @@
 import jittor as jt
 from jittor import nn
-from jseg.bricks import ConvModule
+from ..bricks import ConvModule
 
 from jseg.utils.registry import HEADS
-from jseg.ops import SelfAttentionBlock as _SelfAttentionBlock
+from ..ops import SelfAttentionBlock as _SelfAttentionBlock
 from .decode_head import BaseDecodeHead
 
 

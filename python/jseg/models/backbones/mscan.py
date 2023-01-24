@@ -4,7 +4,7 @@ from jittor import nn
 from jseg.utils.helpers import to_2tuple
 from jseg.utils.registry import BACKBONES
 from jseg.utils.weight_init import trunc_normal_init, normal_init, constant_init
-from jseg.bricks import build_norm_layer
+from ..bricks import build_norm_layer
 
 
 class Mlp(nn.Module):

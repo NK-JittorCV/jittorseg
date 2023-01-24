@@ -5,7 +5,7 @@ import jittor as jt
 from jittor import nn
 from jseg.utils.helpers import to_2tuple
 from jseg.utils.registry import BACKBONES
-from jseg.bricks import build_norm_layer, build_dropout
+from ..bricks import build_norm_layer, build_dropout
 from jseg.utils.weight_init import trunc_normal_init, constant_init, trunc_normal_
 from ..utils.embed import PatchEmbed, PatchMerging, FFN
 

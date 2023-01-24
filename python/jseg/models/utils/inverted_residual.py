@@ -1,4 +1,4 @@
-from jseg.bricks import ConvModule
+from ..bricks import ConvModule
 from jittor import nn
 
 from .se_layer import SELayer

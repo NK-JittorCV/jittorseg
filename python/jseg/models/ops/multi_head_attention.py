@@ -1,10 +1,10 @@
 import warnings
 import jittor as jt
 from jittor import nn
-from jseg.bricks import build_dropout
+from ..bricks import build_dropout
 
 
-class MultiheadAttention(nn.Module):
+class MultiHeadAttention(nn.Module):
     def __init__(self,
                  embed_dims,
                  num_heads,

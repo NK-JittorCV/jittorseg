@@ -1,8 +1,8 @@
 import jittor as jt
 from jittor import nn
-from jseg.ops import resize
+from ..ops import resize
 from jseg.utils.registry import HEADS
-from jseg.bricks import ConvModule
+from ..bricks import ConvModule
 from .decode_head import BaseDecodeHead
 
 

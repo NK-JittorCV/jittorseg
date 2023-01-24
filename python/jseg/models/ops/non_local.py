@@ -4,7 +4,7 @@ import jittor as jt
 from jittor import nn
 
 from jseg.utils.weight_init import constant_init, normal_init
-from jseg.bricks import ConvModule
+from ..bricks import ConvModule
 
 
 class _NonLocalNd(nn.Module, metaclass=ABCMeta):

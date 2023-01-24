@@ -1,5 +1,5 @@
 from jittor import nn
-from jseg.bricks import ConvModule
+from ..bricks import ConvModule
 
 from jseg.utils.helpers import make_divisible
 from jseg.utils.general import is_tuple_of

@@ -1,5 +1,5 @@
 import jittor as jt
-from jseg.ops.non_local import NonLocal2d
+from ..ops import NonLocal2d
 
 from jseg.utils.registry import HEADS
 from .fcn_head import FCNHead

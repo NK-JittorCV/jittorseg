@@ -1,7 +1,7 @@
 import math
 from jseg.utils.registry import BACKBONES
 from .resnet import ResLayer
-from jseg.bricks import build_conv_layer, build_norm_layer
+from ..bricks import build_conv_layer, build_norm_layer
 from .resnet import Bottleneck as _Bottleneck
 from .resnet import ResNet
 

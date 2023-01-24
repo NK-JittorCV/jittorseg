@@ -5,10 +5,10 @@ from jittor import nn
 from ..utils.embed import PatchEmbed, FFN
 from jseg.utils.weight_init import kaiming_init, constant_init, trunc_normal_
 from jseg.utils.helpers import to_2tuple
-from jseg.bricks import build_norm_layer
+from ..bricks import build_norm_layer
 from jittor.nn import BatchNorm as _BatchNorm
 
-from jseg.ops import resize, MultiheadAttention
+from ..ops import resize, MultiHeadAttention
 from jseg.utils.registry import BACKBONES
 
 
@@ -61,7 +61,7 @@ class TransformerEncoderLayer(nn.Module):
         self.build_ffn(ffn_cfg)
 
     def build_attn(self, attn_cfg):
-        self.attn = MultiheadAttention(**attn_cfg)
+        self.attn = MultiHeadAttention(**attn_cfg)
 
     def build_ffn(self, ffn_cfg):
         self.ffn = FFN(**ffn_cfg)

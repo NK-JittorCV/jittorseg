@@ -1,7 +1,7 @@
 import jittor as jt
 from jittor import nn
 from jseg.utils.registry import BACKBONES
-from jseg.bricks import build_conv_layer, build_norm_layer
+from ..bricks import build_conv_layer, build_norm_layer
 
 
 class ResLayer(nn.Sequential):

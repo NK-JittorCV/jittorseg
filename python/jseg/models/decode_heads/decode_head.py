@@ -1,7 +1,7 @@
 import warnings
 import jittor as jt
 from jittor import nn
-from jseg.ops import resize
+from ..ops import resize
 from jseg.utils.registry import build_from_cfg, LOSSES, PIXEL_SAMPLERS
 from abc import ABCMeta, abstractmethod
 

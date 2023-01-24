@@ -2,7 +2,7 @@ from typing import Sequence
 import math
 from jittor import nn
 from jseg.utils.helpers import to_2tuple
-from jseg.bricks import build_conv_layer, build_norm_layer, build_activation_layer, build_dropout
+from ..bricks import build_conv_layer, build_norm_layer, build_activation_layer, build_dropout
 
 
 class AdaptivePadding(nn.Module):
@@ -248,7 +248,7 @@ class FFN(nn.Module):
                  **kwargs):
         super().__init__()
         assert num_fcs >= 2, 'num_fcs should be no less ' \
-            f'than 2. got {num_fcs}.'
+                             f'than 2. got {num_fcs}.'
         self.embed_dims = embed_dims
         self.feedexecute_channels = feedexecute_channels
         self.num_fcs = num_fcs

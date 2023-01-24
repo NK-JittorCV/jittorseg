@@ -3,7 +3,7 @@ from .fcn_head import FCNHead
 from jseg.utils.registry import HEADS
 
 try:
-    from jseg.ops import CrissCrossAttention
+    from ..ops import CrissCrossAttention
 except ModuleNotFoundError:
     CrissCrossAttention = None
 
