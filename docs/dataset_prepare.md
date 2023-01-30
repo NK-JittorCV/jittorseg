@@ -23,7 +23,7 @@ We provided a [scripts](https://github.com/open-mmlab/mmsegmentation/blob/master
 to generate `**labelTrainIds.png`.
 
 ```shell
-python tools/convert_datasets/cityscapes.py dataset/cityscapes
+python tools/datasets_convert_helper/cityscapes.py dataset/cityscapes
 ```
 
 ```
@@ -45,7 +45,7 @@ Beside, most recent works on Pascal VOC dataset usually exploit extra augmentati
 If you would like to use augmented VOC dataset, please run following command to convert augmentation annotations into proper format.
 
 ```shell
-python tools/convert_datasets/voc_aug.py data/VOCdevkit data/VOCdevkit/VOCaug
+python tools/datasets_convert_helper/voc_aug.py data/VOCdevkit data/VOCdevkit/VOCaug
 ```
 
 
@@ -135,7 +135,7 @@ Processed file structure
 ```
 
 ```shell
-python tools/convert_datasets/isaid.py --src=./datasets/iSAID --target=./datasets/iSAID_Patches
+python tools/datasets_convert_helper/isaid.py --src=./datasets/iSAID --target=./datasets/iSAID_Patches
 ```
 
 In our default setting (`patch_width`=800, `patch_height`=800,　`overlap_area`=200), it will generate 28029 images for training and 9512 images for validation.
@@ -158,7 +158,7 @@ wget https://zenodo.org/record/5706578/files/Test.zip
 For LoveDA dataset, please run the following command to download and re-organize the dataset.
 
 ```shell
-python tools/convert_datasets/loveda.py /path/to/loveDA
+python tools/datasets_convert_helper/loveda.py /path/to/loveDA
 ```
 
 More details about LoveDA can be found [here](https://github.com/Junjue-Wang/LoveDA).
@@ -171,7 +171,7 @@ dataset is for urban semantic segmentation used in the 2D Semantic Labeling Cont
 For Potsdam dataset, please run the following command to download and re-organize the dataset.
 
 ```shell
-python tools/convert_datasets/potsdam.py /path/to/potsdam
+python tools/datasets_convert_helper/potsdam.py /path/to/potsdam
 ```
 
 In our default setting, it will generate 3456 images for training and 2016 images for validation.
@@ -184,7 +184,7 @@ dataset is for urban semantic segmentation used in the 2D Semantic Labeling Cont
 For Vaihingen dataset, please run the following command to download and re-organize the dataset.
 
 ```shell
-python tools/convert_datasets/vaihingen.py /path/to/vaihingen
+python tools/datasets_convert_helper/vaihingen.py /path/to/vaihingen
 ```
 
 In our default setting (`clip_size` =512, `stride_size`=256), it will generate 344 images for training and 398 images for validation.

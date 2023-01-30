@@ -1,4 +1,4 @@
-from jseg.utils.inference import InferenceSegmentor
+from jittorseg.utils.inference import InferenceSegmentor
 
 
 def main():
