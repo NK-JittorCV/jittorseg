@@ -1,4 +1,4 @@
-# OpenJV-Segmentation
+# JittorSeg
 
 **Coming Soon...**
 
