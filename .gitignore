@@ -113,7 +113,6 @@ venv.bak/
 work_dirs/
 pretrained/
 datasets/
-!python/jittorseg/datasets
 results/
 # Pytorch
 *.pth
