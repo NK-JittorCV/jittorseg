@@ -104,7 +104,7 @@ class BaseRunner(metaclass=ABCMeta):
     def save(self):
         save_data = {
             "meta": {
-                "jseg_version": jittorseg.__version__,
+                "jittorseg_version": jittorseg.__version__,
                 "epoch": self.epoch,
                 "iter": self.iter + 1,
                 "max_iter": self.max_iter,

@@ -33,4 +33,4 @@ from jittorseg.config import init_cfg
 init_cfg('cfg.py')
 ```
 
-Please refer to `[ROOT]/python/jseg/config/config.py` for more details.
+Please refer to `[ROOT]/python/jittorseg/config/config.py` for more details.

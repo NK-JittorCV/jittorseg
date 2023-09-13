@@ -111,12 +111,9 @@ venv.bak/
 *.pkl.json
 *.log.json
 work_dirs/
-work_dirs
-pretrained
 pretrained/
-datasets
 datasets/
-results
+!python/jittorseg/datasets
 results/
 # Pytorch
 *.pth
