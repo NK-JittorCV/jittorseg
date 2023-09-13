@@ -1,8 +1,8 @@
 from utils.config_process import parser
 import jittor as jt
-from jseg.runner import TrainRunner, EvalRunner, TestRunner
-from jseg.config import init_cfg
-from jseg.config.config import update_cfg
+from jittorseg.runner import TrainRunner, EvalRunner, TestRunner
+from jittorseg.config import init_cfg
+from jittorseg.config.config import update_cfg
 
 jt.cudnn.set_max_workspace_ratio(0.0)
 

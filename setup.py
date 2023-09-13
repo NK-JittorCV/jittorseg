@@ -2,7 +2,7 @@ from setuptools import find_packages, setup
 import os
 
 path = os.path.join(os.path.dirname(__file__), "python")
-with open(os.path.join(path, "jseg/__init__.py"), "r", encoding='utf8') as fh:
+with open(os.path.join(path, "jittorseg/__init__.py"), "r", encoding='utf8') as fh:
     for line in fh:
         if line.startswith('__version__'):
             version = line.split("'")[1]
@@ -88,7 +88,7 @@ def parse_requirements(fname='requirements.txt', with_version=True):
 
 
 if __name__ == '__main__':
-    setup(name='jseg',
+    setup(name='jittorseg',
           version=version,
           description='Semantic Segmentation Toolbox By Jittor',
           author="Jittor Group",

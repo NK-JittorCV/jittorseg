@@ -25,9 +25,11 @@ model = {
 }
 ```
 You can load .py configuration file as load .yaml configuration file:
+
 ```python
 # main.py
-from jseg.config import init_cfg
+from jittorseg.config import init_cfg
+
 init_cfg('cfg.py')
 ```
 
