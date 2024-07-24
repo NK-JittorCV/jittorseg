@@ -1,6 +1,8 @@
 # JittorSeg
 
 **Coming Soon...**
+[TODO]：Dichotomous Image Segmentation
+[TODO]：Camouflaged Object Segmentation
 
 ## Getting Started
 
